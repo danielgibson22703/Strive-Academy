@@ -26,13 +26,13 @@
         <img id="ky_kiske" src="ky_kiske.png" alt="picture of Ky Kiske">
         <h2>Book a Coaching Session</h2>
         <p>Select a package and fill out your details below</p>
-            
-        </div>
+
+    </div>
     </div>
 
     <!-- Coaching packages -->
     <section>
-        <table>
+        <table class="coaching-table">
             <tr>
                 <th>Package</th>
                 <th>Description</th>
@@ -42,30 +42,50 @@
             <tr>
                 <td>Set Review</td>
                 <td>I do your homework for you if you don't understand a matchup.
-                    Replay analysis with written feedback for a first to 3 set.</td>
-                <td>$15</td>
+                    Replay analysis with written feedback for a first to 5 set.</td>
+                <td>$15   <button class="snipcart-add-item" 
+                    data-item-id="set-review" data-item-price="15.00"
+                    data-item-description="I do your homework for you if you don't understand a matchup.
+                    Replay analysis with written feedback for a set."
+                    data-item-name="Set Review">Book</button></td>
             </tr>
 
             <tr>
-                <td>1 Hour VOD Review</td>
+                <td>1 Hour Improvement Plan</td>
                 <td>A one-hour coaching session focused on
                     improving your gameplay via watching your replays and giving
                     a detailed plan for things you need to work on.</td>
-                <td>$30</td>
+                <td>$30   <button class="snipcart-add-item" 
+                    data-item-id="1-hour" data-item-price="30.00"
+                    data-item-description="A one-hour coaching session focused on
+                    improving your gameplay via watching your replays and giving
+                    a detailed plan for things you need to work on."
+                    data-item-name="1 Hour Improvement Plan">Book</button></td>
             </tr>
 
             <tr>
                 <td>3 Hour Package Deal</td>
                 <td>In-depth improvement plan with personalized strategies for
                     your specific playstyle.</td>
-                <td>$50</td>
+                <td>$50   <button class="snipcart-add-item" 
+                    data-item-id="1-hour" data-item-price="50.00"
+                    data-item-description="In-depth improvement plan with personalized strategies for
+                    your specific playstyle."
+                    data-item-name="3 Hour Package Deal">Book</button></td>
             </tr>
         </table>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Contact: dgibson9@my.westga.edu</p>
-        <p>© 2021 Arc System Works. All Rights Reserved.</p>
-    </footer>
 </body>
+<script>
+    window.SnipcartSettings = {
+        publicApiKey: "ST_MDdmMWFmNzAtYjFhYy00NGQ0LWFjNjMtYWNmZWEwYzcwNmZkNjM5MTMxMTAwOTM2ODAxMDEx",
+        loadStrategy: "on-user-interaction",
+    };
+
+    (function () { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var m, g; (g = (m = window.SnipcartSettings).loadCSS) != null || (m.loadCSS = !0); var y = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, f = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (f.forEach(function (t) { return document.addEventListener(t, o) }), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], n = document.querySelector("#snipcart"), i = document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][src$="snipcart.js"]')), e = document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][href$="snipcart.css"]')); n || (n = document.createElement("div"), n.id = "snipcart", n.setAttribute("hidden", "true"), document.body.appendChild(n)), h(n), i || (i = document.createElement("script"), i.src = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.js"), i.async = !0, t.appendChild(i)), !e && window.SnipcartSettings.loadCSS && (e = document.createElement("link"), e.rel = "stylesheet", e.type = "text/css", e.href = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.css"), t.prepend(e)), f.forEach(function (v) { return document.removeEventListener(v, o) }) } function h(t) { !y || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
+</script>
+<!-- Footer -->
+<footer>
+    <p>Contact: dgibson9@my.westga.edu</p>
+    <p>© 2021 Arc System Works. All Rights Reserved.</p>
+</footer>
