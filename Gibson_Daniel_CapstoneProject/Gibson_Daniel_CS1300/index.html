@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Strive Academy</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Strive Academy offers Guilty Gear Strive coaching to help players improve fundamentals, matchups, and decision making in their gameplay.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
     <!-- Header with navigation -->
     <header>
@@ -62,6 +67,13 @@
     <footer>
         <p>Contact: dgibson9@my.westga.edu</p>
         <p>© 2021 Arc System Works. All Rights Reserved.</p>
+        <div id="lastModified"></div>
+        <script>
+        $(document).ready(function () {
+            $("#lastModified").html("<h6>This page was last modified: " + document.lastModified + "</h6>");
+        });
+    </script>
     </footer>
 </body>
+
 </html>
