@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Strive Academy</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact Strive Academy for Guilty Gear Strive coaching, questions, and booking details.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -46,6 +48,12 @@
     </main>
     <footer>
         <p>Contact: dgibson9@my.westga.edu</p>
+        <div id="lastModified"></div>
+        <script>
+        $(document).ready(function () {
+            $("#lastModified").html("<h6>This page was last modified: " + document.lastModified + "</h6>");
+        });
+    </script>
     </footer>
 </body>
 
